@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+#image{
+    background-image: url("../image/new3.jpg");
+    width: 1366px;
+    height: 700px;
+}
+
+.error{
+    border: 1px solid red !important;
+}
+
