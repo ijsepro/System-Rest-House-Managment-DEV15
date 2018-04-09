@@ -1,0 +1,42 @@
+#con{
+  border: ridge;
+  background-color: black;
+  font-style: oblique;
+  opacity: 1;
+  height: 730px;
+  width: 490px;
+  position: absolute;
+  left: 750px;
+  margin-top: 0px;
+
+}
+#image1{}
+.row{
+  border: white;
+}
+#body{
+  background-image: url("../registration/register21.jpg");
+  width: 750px;
+  height: 730px;
+  position: absolute;
+  left: 50px;
+
+}
+.col-md-10{
+  left: 25px;
+  color: white;
+}
+.col-md-11{
+  left: 15px;
+}
+.col-md-12{
+  right: 5px;
+  position: absolute;
+}
+.login-box-msg{
+  text-align: center;
+  font-style: oblique;
+  font-size: 25px;
+  color: darkgray;
+  font-weight: bold;
+}
