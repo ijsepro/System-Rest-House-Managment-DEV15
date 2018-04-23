@@ -25,6 +25,15 @@ import { AddcityComponent } from './addcity/addcity.component';
 import { LocationtypeComponent } from './locationtype/locationtype.component';
 import {HttpClientModule} from "@angular/common/http";
 
+import { LoginformComponent } from "./adminlogin/loginform/loginform.component";
+import { ForgotformComponent } from "./adminlogin/forgotform/forgotform.component";
+import { ResetformComponent } from "./adminlogin/resetform/resetform.component";
+
+import { ViewallComponent } from "./viewall/viewall.component";
+import { CreateclienteventComponent } from "./createclientevent/createclientevent.component";
+
+import {AddeventComponent} from "./addevent/addevent.component";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +47,13 @@ import {HttpClientModule} from "@angular/common/http";
     UpgradeComponent,
     ViewlocationComponent,
       AddcityComponent,
-      LocationtypeComponent
+      LocationtypeComponent,
+      LoginformComponent,
+      ForgotformComponent,
+      ResetformComponent,
+      AddeventComponent,
+      ViewallComponent,
+      CreateclienteventComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,15 @@ import { ViewlocationComponent } from './viewlocation/viewlocation.component';
 import { AddcityComponent } from './addcity/addcity.component';
 import {LocationtypeComponent } from './locationtype/locationtype.component';
 
+import { LoginformComponent } from "./adminlogin/loginform/loginform.component";
+import { ForgotformComponent } from "./adminlogin/forgotform/forgotform.component";
+import { ResetformComponent } from "./adminlogin/resetform/resetform.component";
+
+import { AddeventComponent } from "./addevent/addevent.component";
+import { ViewallComponent } from "./viewall/viewall.component";
+import { CreateclienteventComponent } from "./createclientevent/createclientevent.component";
+
+
 const routes: Routes =[
     { path: 'dashboard',      component: HomeComponent },
     { path: 'user',           component: UserComponent },
@@ -27,6 +36,13 @@ const routes: Routes =[
     { path: 'viewlocation',        component: ViewlocationComponent },
     { path: 'addcity',        component: AddcityComponent },
     { path: 'locationtype',        component: LocationtypeComponent },
+
+    { path: 'loginform', component: LoginformComponent },
+    { path: 'forgotform', component: ForgotformComponent },
+    { path: 'resetform', component: ResetformComponent },
+    { path: 'addevent',       component: AddeventComponent },
+    { path: 'viewall',       component: ViewallComponent },
+    { path: 'createclientevent',       component: CreateclienteventComponent },
       { path: '',          redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 
