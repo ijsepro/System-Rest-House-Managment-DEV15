@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 style="text-align: center">Payments</h2>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-2">
+      Package :
+    </div>
+    <div class="col-10">
+      <select class="form-control" #selectedPackage (click)="loadEvents(selectedPackage)">
+        <option *ngFor="let package of packages" #optionPackage>{{package}}</option>
+      </select>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-2">
+      Event :
+    </div>
+    <div class="col-10">
+      <select class="form-control" #selectedEvent (click)="setTotalNo(selectedEvent)">
+        <option *ngFor="let event of events">{{event}}</option>
+      </select>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-2">
+      Safari :
+    </div>
+    <div class="col-4">
+      <input id="rdyes" type="radio" name="safari" value="Yes" #rdYes (click)="setTotalYes(selectedEvent)"><label for="rdyes">&nbsp;&nbsp;Yes</label>
+    </div>
+    <div class="col-4">
+      <input id="rdno" type="radio" name="safari" value="No" checked #rdNo (click)="setTotalNo(selectedEvent)"><label for="rdno">&nbsp;&nbsp;No</label>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-2">
+      Total :
+    </div>
+    <div class="col-10">
+      <input type="text" class="form-control" readonly value="{{totalValue}}">
+    </div>
+  </div>
+</div>
