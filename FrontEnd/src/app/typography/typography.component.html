@@ -1,82 +1,89 @@
 <div class="main-content" >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="header">
-                        <h4 class="title">Light Bootstrap Table Heading</h4>
-                        <p class="category">Created using Roboto Font Family</p>
-                    </div>
-                    <div class="content">
+            <div class="col-md-8">
+                <form id="frmAddPackage" action="" method="post" enctype="application/x-www-form-urlencoded">
+                    <br>
 
-                        <div class="typo-line">
-                            <h1><p class="category">Header 1</p>Light Bootstrap Table Heading </h1>
-                        </div>
+                    <p class="form-group">
+                        <label>Package Id :</label>
+                        <input
+                                (keyup.enter)="createPackage(id)" #id
+                                class="form-control" name="packageId" placeholder="Enter Package Id">
+                    </p>
+                    <p class="form-group">
+                        <label>Package Name :</label>
+                        <input
+                                (keyup.enter)="createPackage(name)" #name
+                                class="form-control" name="packageName" placeholder="Enter Package Name">
+                    </p>
 
-                        <div class="typo-line">
-                            <h2><p class="category">Header 2</p>Light Bootstrap Table Heading</h2>
-                        </div>
-                        <div class="typo-line">
-                            <h3><p class="category">Header 3</p>Light Bootstrap Table Heading</h3>
-                        </div>
-                        <div class="typo-line">
-                            <h4><p class="category">Header 4</p>Light Bootstrap Table Heading</h4>
-                        </div>
-                        <div class="typo-line">
-                            <h5><p class="category">Header 5</p>Light Bootstrap Table Heading</h5>
-                        </div>
-                        <div class="typo-line">
-                            <h6><p class="category">Header 6</p>Light Bootstrap Table Heading</h6>
-                        </div>
-                        <div class="typo-line">
-                            <p><span class="category">Paragraph</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-                        </div>
-                        <div class="typo-line">
-                            <p class="category">Quote</p>
-                            <blockquote>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
-                                </p>
-                                <small>
-                                    Steve Jobs, CEO Apple
-                                </small>
-                            </blockquote>
-                        </div>
+                </form>
 
-                        <div class="typo-line">
-                            <p class="category">Muted Text</p>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-                            </p>
-                        </div>
-                        <div class="typo-line">
-                            <!--
-                            there are also "text-info", "text-success", "text-warning", "text-danger" clases for the text
-                            -->
-                            <p class="category">Coloured Text
-                            </p>
-                            <p class="text-primary">
-                                Text Primary - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                            </p>
-                            <p class="text-info">
-                                Text Info - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                            </p>
-                            <p class="text-success">
-                                Text Success - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                            </p>
-                            <p class="text-warning">
-                                Text Warning - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                            </p>
-                            <p class="text-danger">
-                                Text Danger - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                            </p>
-                        </div>
-                        <div class="typo-line">
-                            <h2><p class="category">Small Tag</p>Header with small subtitle <br><small>".small" is a tag for the headers</small> </h2>
-                        </div>
-                    </div>
-                </div>
+                <button type="submit" class="btn btn-round btn-fill btn-info pull-right">Add To Table</button>
+
+                <br>
+                <br>
+                <br>
+
+                <table class="table" id="table">
+                    <thead style="background-color: darkblue; color: white">
+                    <tr>
+                        <th></th>
+                        <th>Package Id</th>
+                        <th>Package Name</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+
+
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a>
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+
+
+
+                </table>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <ul>
+                    <br>
+
+                    <input type="text" name="search" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button>
+
+                    <br>
+                    <br>
+                    <li>
+                        <a href="viewall"><i class="fa fa-forward" aria-hidden="true"></i>
+                            Manage Event
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href=""><i class="fa fa-forward" aria-hidden="true"></i>
+                            Manage Rest House
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="viewmeals"><i class="fa fa-forward" aria-hidden="true"></i>
+                            Manage Meals
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
+
