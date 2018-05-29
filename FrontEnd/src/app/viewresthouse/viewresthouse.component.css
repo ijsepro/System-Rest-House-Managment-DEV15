@@ -1,0 +1,28 @@
+.col-md-4{
+    height: 750px;
+    background-image: url("../image/darkhouse.jpg");
+    border-color: white;
+    opacity: 0.7;
+    -webkit-animation-name: example ;
+    -webkit-animation-duration: 200s;
+    animation-name: example;
+    animation-duration: 200s;
+}
+
+@-webkit-keyframes example {
+    0% {background-image: url("../image/LogHomePhoto_0001206.jpg")}
+    25% {background-image: url("../image/rustic-wood-stairs-staircase-rustic-with-stone-floor-tile-white-laminate-tile-flooring.jpg")}
+    50% {background-image: url("../image/Bedroom-Windows-Patio-Door-Wood-Flooring-Interior-Dowell-Golden-Eagle-Log-Homes-2.jpg")}
+    100% {background-image: url("../image/image.jpg")}
+}
+@keyframes example {
+    0%   {background-image: url("../image/LogHomePhoto_0001206.jpg")}
+    25%  {background-image: url("../image/rustic-wood-stairs-staircase-rustic-with-stone-floor-tile-white-laminate-tile-flooring.jpg")}
+    50%  {background-image: url("../image/Bedroom-Windows-Patio-Door-Wood-Flooring-Interior-Dowell-Golden-Eagle-Log-Homes-2.jpg")}
+    100% {background-image: url("../image/image.jpg")}
+}
+.col-md-8{
+    background-color: white;
+    height: 750px;
+
+}

@@ -4,11 +4,13 @@
     margin-top: 0px;
     width: 250px;
     color: dimgray;
+    height: 600px;
 }
 
 .col-md-7{
     background-color: white;
-    width: 810px;
+    width: 800px;
+    height: 600px;
 
 }
 

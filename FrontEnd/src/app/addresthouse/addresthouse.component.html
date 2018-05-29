@@ -1,0 +1,137 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <br>
+                <br>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>Package :</label></div>
+                <div class="col-md-7"><select class="form-control" name="package"></select></div>
+                <div class="col-md-1"></div>
+                <br>
+                <br>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>City :</label></div>
+                <div class="col-md-7"><select class="form-control" name="city"></select></div>
+                <div class="col-md-1"></div>
+                <br>
+                <br>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>Location :</label></div>
+                <div class="col-md-7"><select class="form-control" name="locationType"></select></div>
+                <div class="col-md-1"></div>
+                <br>
+                <br>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>Accomaration Type :</label></div>
+                <div class="col-md-7"><select class="form-control" name="locationType"></select></div>
+                <div class="col-md-1"></div>
+                <br>
+                <br>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>Accomaration ID :</label></div>
+                <div class="col-md-7"><input (keyup.enter)="addresthouse(id)" #id type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
+                <br>
+                <br>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>RestHouse Name :</label></div>
+                <div class="col-md-7"><input type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
+                <br>
+                <br>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>Gest Limit :</label></div>
+                <div class="col-md-7"><input type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
+                <br>
+                <br>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>Cost :</label></div>
+                <div class="col-md-7"><input type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3"><label>Room Category :</label></div>
+                            <div class="col-md-3"><label>Room Type :</label></div>
+                            <div class="col-md-3"><label>Room Count :</label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3"><select class="form-control" name="locationType"></select></div>
+                            <div class="col-md-3"><select class="form-control" name="locationType"></select></div>
+                            <div class="col-md-3"><select class="form-control" name="locationType"></select></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-round btn btn-info btn-fill btn-info btn-block">Add To Table</button>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-7">
+                    <table class="table" id="tableR">
+                        <thead style="background-color: white;color: white">
+                        <tr>
+                            <th></th>
+                            <th>Room Category</th>
+                            <th>Room Type</th>
+                            <th>Count</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a><i class="fa fa-times" aria-hidden="true"></i> </a>remove</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10">
+                            <button type="submit" class="btn-success btn btn-info btn btn-round btn-fill btn-info col-md-5">Add All Location</button>
+                            <a  href="table" class="btn-danger btn btn-round btn-fill btn-info btn-info col-md-5">Back ViewLocation</a>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                            <p class="hidden-lg hidden-md">Search</p>
+                        </a>
+                    </li>
+                </ul>
+                <br>
+                <div class="space"></div>
+                <ul>
+                    <li>
+                        <a href="uploadaccomarationphotos"><i class="fa fa-forward" aria-hidden="true"></i>
+                            Upload Accomaration Photos
+                        </a>
+                    </li>
+                    <li class="separator hidden-lg hidden-md"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

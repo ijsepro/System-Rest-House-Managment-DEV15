@@ -1,18 +1,28 @@
 <div class="main-content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-7">
+            <!--<div class="col-md-1"></div>-->
+            <div class="col-md-12">
                 <br>
                 <br>
-                <div class="col-md-3"><label>City ID :</label></div>
-                <div class="col-md-9"><input type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2"><label>City ID :</label></div>
+                <div class="col-md-8"><input  (keyup.enter)="createCity(id)"#id
+                                              type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
                 <br>
                 <br>
-                <div class="col-md-3"><label>City :</label></div>
-                <div class="col-md-9"><input type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2"><label>City :</label></div>
+                <div class="col-md-8"><input (keyup.enter)="createCity(name)"#name
+                        type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
                 <br>
                 <br>
                 <br>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                <div class="col-md-8">
                 <table class="table" id="tableCity">
                     <thead style="background-color:white;color: white">
                     <tr>
@@ -25,15 +35,23 @@
                     <tbody>
                     <tr>
                         <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{createCity.id}}</td>
+                        <td>{{createCity.name}}</td>
                         <td><a><i class="fa fa-pencil-square-o" aria-hidden="true">update</i> </a></td>
                     </tr>
                     </tbody>
                 </table>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                <div><a  href="viewlocation" class="btn btn-round btn-fill btn-info col-md-4">Add New City</a></div>
+                <div><a  href="viewlocation" class="btn btn-danger btn btn-round btn-fill btn-info col-md-4">Delete City</a></div>
 
+                </div><!--<button type="reset" class="btn btn-danger class=btn btn-round btn-fill btn-info center-block">Delete City</button>-->
+                </div>
             </div>
-            <div class="col-md-3"></div>
         </div>
     </div>
 </div>

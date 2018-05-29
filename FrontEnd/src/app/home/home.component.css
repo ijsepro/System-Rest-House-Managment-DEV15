@@ -1,0 +1,20 @@
+.col-md-12{
+    background-image: url("../image/Vatadage.jpg");
+    height: 600px;
+    -webkit-animation-name: example ;
+    -webkit-animation-duration: 120s;
+    animation-name: example;
+    animation-duration: 120s;
+}
+@-webkit-keyframes example {
+    0% {background-image: url("../image/full-screen-image-3.jpg")}
+    25% {background-image: url("../image/Vatadage.jpg")}
+    50% {background-image: url("../image/sigiriya-by-air.jpg")}
+    100% {background-image: url("../image/2937f661f233c7a3413a18037107d403--sri-lanka-moonstones.jpg")}
+}
+@keyframes example {
+    0%   {background-image: url("../image/full-screen-image-3.jpg")}
+    25%  {background-image: url("../image/Vatadage.jpg")}
+    50%  {background-image: url("../image/sigiriya-by-air.jpg")}
+    100% {background-image: url("../image/2937f661f233c7a3413a18037107d403--sri-lanka-moonstones.jpg")}
+}

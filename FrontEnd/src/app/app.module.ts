@@ -23,7 +23,13 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
 import { ViewlocationComponent } from './viewlocation/viewlocation.component';
 import { AddcityComponent } from './addcity/addcity.component';
 import { LocationtypeComponent } from './locationtype/locationtype.component';
-import {HttpClientModule} from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
+import { UploadimageComponent } from "./uploadimage/uploadimage.component";
+import { ViewresthouseComponent } from "./viewresthouse/viewresthouse.component";
+import { AddresthouseComponent } from "./addresthouse/addresthouse.component";
+import { ServiceComponent } from './service/service.component';
+import { AddcityService } from "./service/addcity.service";
+import { AddresthouseService } from "./service/addresthouse.service";
 
 @NgModule({
   declarations: [
@@ -38,7 +44,11 @@ import {HttpClientModule} from "@angular/common/http";
     UpgradeComponent,
     ViewlocationComponent,
       AddcityComponent,
-      LocationtypeComponent
+      LocationtypeComponent,
+      UploadimageComponent,
+      ViewresthouseComponent,
+      AddresthouseComponent,
+      ServiceComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +62,10 @@ import {HttpClientModule} from "@angular/common/http";
     LbdModule,
       HttpClientModule
   ],
-  providers: [],
+  providers: [
+       AddcityService,
+      AddresthouseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

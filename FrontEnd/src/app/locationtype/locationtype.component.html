@@ -1,18 +1,25 @@
 <div class="main-content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-12">
                 <br>
                 <br>
-                <div class="col-md-4"><label>LocationType ID :</label></div>
-                <div class="col-md-8"><input type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>LocationType ID :</label></div>
+                <div class="col-md-7"><input (keyup.enter)="addresthouse(id)" #id type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
                 <br>
                 <br>
-                <div class="col-md-4"><label>Location Type :</label></div>
-                <div class="col-md-8"><input type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3"><label>Location Type :</label></div>
+                <div class="col-md-7"><input type="text" class="form-control"></div>
+                <div class="col-md-1"></div>
                 <br>
                 <br>
                 <br>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
                 <table class="table" id="tableLocationType">
                     <thead style="background-color:white;color: white">
                     <tr>
@@ -31,7 +38,16 @@
                     </tr>
                     </tbody>
                 </table>
-    <div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <div><a  href="viewlocation" class="btn btn-success btn btn-round btn-fill btn-info col-md-4">Add LocationType</a></div>
+                        <div><a  href="viewlocation" class="btn btn-danger btn btn-round btn-fill btn-info col-md-4">Delete LocationType</a></div>
+
+                    </div><!--<button type="reset" class="btn btn-danger class=btn btn-round btn-fill btn-info center-block">Delete City</button>-->
+                </div>
             </div>
             <div class="col-md-3"></div>
         </div>
